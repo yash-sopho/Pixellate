@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yash.picslatte.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--top toolbar -->
+        <RelativeLayout
+            android:id="@+id/rellayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/layout_top_tabs" />
+
+        </RelativeLayout>
+
+
+        <!--middle toolbar -->
+        <RelativeLayout
+            android:id="@+id/rellayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rellayout1">
+
+            <include layout="@layout/share_center_view_pager1" />
+        </RelativeLayout>
+
+
+        <include layout="@layout/layout_bottom_navigation_view" />
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
